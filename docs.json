@@ -15,42 +15,14 @@
   "navigation": {
     "groups": [
       {
-        "group": "开始使用",
+        "group": "PilotDeck",
         "pages": [
-          "pages/introduction",
-          "pages/quickstart-web",
-          "pages/quickstart-desktop"
+          "pages/showcase/overview"
         ]
       },
       {
-        "group": "核心功能",
+        "group": "案例",
         "pages": [
-          "pages/features/projects",
-          "pages/features/gateway",
-          "pages/features/router",
-          "pages/features/memory",
-          "pages/features/always-on"
-        ]
-      },
-      {
-        "group": "架构说明",
-        "pages": [
-          "pages/architecture/overview",
-          "pages/architecture/configuration"
-        ]
-      },
-      {
-        "group": "参考",
-        "pages": [
-          "pages/reference/cli",
-          "pages/reference/config-yaml",
-          "pages/reference/troubleshooting"
-        ]
-      },
-      {
-        "group": "案例展示",
-        "pages": [
-          "pages/showcase/overview",
           "pages/showcase/zelda-glider",
           "pages/showcase/podcast-multilingual",
           "pages/showcase/qq-farm",
@@ -60,10 +32,43 @@
         ]
       },
       {
-        "group": "开发指南",
+        "group": "Tutorial",
         "pages": [
-          "pages/development/contributing",
-          "pages/development/module-guide"
+          "pages/introduction",
+          "pages/quickstart-web",
+          "pages/quickstart-desktop",
+          {
+            "group": "核心功能",
+            "pages": [
+              "pages/features/projects",
+              "pages/features/gateway",
+              "pages/features/router",
+              "pages/features/memory",
+              "pages/features/always-on"
+            ]
+          },
+          {
+            "group": "架构说明",
+            "pages": [
+              "pages/architecture/overview",
+              "pages/architecture/configuration"
+            ]
+          },
+          {
+            "group": "参考",
+            "pages": [
+              "pages/reference/cli",
+              "pages/reference/config-yaml",
+              "pages/reference/troubleshooting"
+            ]
+          },
+          {
+            "group": "开发指南",
+            "pages": [
+              "pages/development/contributing",
+              "pages/development/module-guide"
+            ]
+          }
         ]
       }
     ]
