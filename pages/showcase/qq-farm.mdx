@@ -1,0 +1,57 @@
+---
+title: "QQ 农场"
+description: "网页版简易 QQ 农场游戏，FastAPI + SQLite 架构"
+icon: "seedling"
+---
+
+# QQ 农场 — MB Farm
+
+<Info>
+**分类**：网页游戏 &nbsp;|&nbsp; **用户输入**：10 轮 &nbsp;|&nbsp; **AI 回复**：159 轮 &nbsp;|&nbsp; **工具调用**：149 次
+</Info>
+
+网页版简易 QQ 农场游戏 MB Farm，采用 FastAPI + SQLite 架构，支持社交偷菜玩法。最多十几人游玩，轻量级方案快速交付。
+
+## 交互过程
+
+<Steps>
+  <Step title="用户初始要求">
+    你了解 QQ 农场吗？我想做一个网页版、简易版的 QQ 农场游戏，游戏名叫做 MB Farm。最多十几个人游玩。你有什么建议。
+  </Step>
+  <Step title="AI 架构设计">
+    十几人的规模非常小，不需要微服务、消息队列这些重型基础设施。推荐方案：
+
+    - **后端**：Python + FastAPI（轻量、API 自动文档）
+    - **数据库**：SQLite（零配置，单文件）
+    - **前端**：Jinja2 模板 + 原生 CSS/JS（零构建）
+    - **实时通信**：FastAPI WebSocket（偷菜通知、作物成熟提醒）
+    - **认证**：FastAPI 内置 Session
+  </Step>
+  <Step title="模块化架构设计">
+    用户要求项目结构按模块区分，重视依赖注入思想，并给出每个模块的优先级。AI 随后设计了完整架构：
+
+    `models / services / repositories / routes / core / templates / static` 分层结构。
+  </Step>
+  <Step title="文档驱动开发">
+    创建 docs 目录，把优先级为 P0 的内容（基础设施、注册/登录）写成文档，按模块区分子目录。每个模块的文档先规划方案再开始写。随后创建项目 README，记录架构和 docs 目录结构。
+  </Step>
+  <Step title="交付成果">
+    共 384 条记录 | 10 轮用户输入 | 100 轮 AI 回复 | 149 次工具调用。
+
+    最终交付：完整的 MB Farm 架构设计文档，包含分层架构、依赖注入体系、P0-P3 优先级规划。
+  </Step>
+</Steps>
+
+## 技术栈
+
+<CardGroup cols={3}>
+  <Card title="FastAPI" icon="bolt">
+    轻量高性能 Python 后端
+  </Card>
+  <Card title="SQLite" icon="database">
+    零配置单文件数据库
+  </Card>
+  <Card title="WebSocket" icon="tower-broadcast">
+    实时偷菜通知和作物提醒
+  </Card>
+</CardGroup>

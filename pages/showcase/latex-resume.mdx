@@ -1,0 +1,58 @@
+---
+title: "简历生成"
+description: "基于 LaTeX 的专业个人简历模板，以雷军经历为范例"
+icon: "file-pdf"
+---
+
+# 简历生成 — Resume Generator
+
+<Info>
+**分类**：工具 &nbsp;|&nbsp; **用户输入**：5 轮 &nbsp;|&nbsp; **AI 回复**：35 轮 &nbsp;|&nbsp; **工具调用**：114 次
+</Info>
+
+基于 LaTeX 的专业个人简历模板，以雷军的经历为范例填充内容，支持中英文排版。
+
+<Frame>
+  <img src="/demos/resume/resume.png" alt="简历生成效果截图" />
+</Frame>
+
+## 交互过程
+
+<Steps>
+  <Step title="用户初始要求">
+    帮我做一个 LaTeX 版本的个人简历模版，具体内容以雷军的经历来填入。
+  </Step>
+  <Step title="AI 模板设计">
+    AI 设计了一个专业的 LaTeX 简历布局：
+
+    - `xelatex` 编译 + `geometry` 页边距设置
+    - `enumitem` 控制列表 + `hyperref` 超链接
+    - `fontspec` 中文字体支持
+    - `titlesec` 定制标题格式
+    - `tabularx` 排版经历表格
+  </Step>
+  <Step title="编译调试 — 灵活适应">
+    AI 尝试 `xelatex` 编译但系统缺少 TeX 环境。用户要求"直接用已有环境"。AI 发现系统有 `pdflatex` 但不支持中文。用户建议"直接用英文的"。AI 立即调整模板为英文版本。
+
+    整个过程体现了 AI 快速响应用户需求变化的能力。
+  </Step>
+  <Step title="交付成果">
+    共 239 条记录 | 5 轮用户输入 | 35 轮 AI 回复 | 114 次工具调用。
+
+    最终交付：专业 LaTeX 简历模板（以雷军经历填充），包含个人简介、教育经历、职业经历、项目成就等模块，同时支持中英文排版。
+  </Step>
+</Steps>
+
+## 简历模块
+
+<CardGroup cols={3}>
+  <Card title="个人简介" icon="user">
+    基本信息与联系方式
+  </Card>
+  <Card title="教育经历" icon="graduation-cap">
+    武汉大学计算机系
+  </Card>
+  <Card title="职业经历" icon="briefcase">
+    金山软件 → 小米科技
+  </Card>
+</CardGroup>

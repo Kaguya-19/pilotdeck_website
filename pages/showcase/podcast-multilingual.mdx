@@ -1,0 +1,70 @@
+---
+title: "播客多语言推送"
+description: "一句话生成 6 种语言版本的图文推送页面"
+icon: "language"
+---
+
+# 播客多语言推送 — Multilingual Podcast Push
+
+<Info>
+**分类**：多媒体 &nbsp;|&nbsp; **用户输入**：1 轮 &nbsp;|&nbsp; **AI 回复**：18 轮 &nbsp;|&nbsp; **工具调用**：17 次
+</Info>
+
+将一期英文播客推送给全球受众，一键生成 6 种语言版本的图文推送页面。每个页面包含本地化摘要文案和文化适配主题配图。
+
+<Frame>
+  <img src="/demos/podcast/cover_zh.png" alt="播客中文推送封面" />
+</Frame>
+
+## 交互过程
+
+<Steps>
+  <Step title="用户初始要求">
+    工作目录里有一段英文播客 podcast.mp3。我想把这期播客推送给全球受众，覆盖中文、日文、法文、韩文、西班牙文和阿拉伯文六个语言版本。帮我做出六个语言版本的图文推送页面，每个页面要有：播客内容的本地化摘要文案、一张适配当地文化审美的主题配图，整体排版要好看、专业。注意阿拉伯文版本需要 RTL（从右到左）排版。所有产出放到 results/ 目录。
+  </Step>
+  <Step title="AI 方案设计">
+    AI 首先探索工作目录结构，检查 skills 目录（speech-to-text 等技能模块），制定完整流水线：
+
+    1. 音频转录
+    2. 英文摘要 / 关键词提取
+    3. 6 种语言翻译
+    4. 每种语言生成本地化摘要和配图
+    5. 6 个专业排版页面（含 RTL 支持）
+  </Step>
+  <Step title="批量处理">
+    使用 agent 子任务并行处理：
+
+    - 音频转录为 `transcript.txt`
+    - 生成多语言 `summary.json`
+    - 为每种语言生成文化适配封面图（`cover_zh.png`、`cover_ja.png` 等）
+    - 生成 6 个 HTML 推送页面，阿拉伯文版本使用 RTL 排版
+  </Step>
+  <Step title="交付成果">
+    共 57 条记录 | 1 轮用户输入 | 12 轮 AI 回复 | 23 次工具调用。
+
+    最终交付：6 个语言版本的精美推送页面 + 6 张文化适配封面图 + 英文转录全文 + 多语言摘要 JSON。用户只需一句话，AI 完成了完整的多语言本地化推送流水线。
+  </Step>
+</Steps>
+
+## 语言版本
+
+<CardGroup cols={3}>
+  <Card title="中文" icon="globe">
+    简体中文本地化推送
+  </Card>
+  <Card title="日本語" icon="globe">
+    日文推送（日本文化适配）
+  </Card>
+  <Card title="Français" icon="globe">
+    法文推送（法国文化适配）
+  </Card>
+  <Card title="한국어" icon="globe">
+    韩文推送（韩国文化适配）
+  </Card>
+  <Card title="Español" icon="globe">
+    西班牙文推送
+  </Card>
+  <Card title="العربية" icon="globe">
+    阿拉伯文推送（RTL 排版）
+  </Card>
+</CardGroup>
