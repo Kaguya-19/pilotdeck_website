@@ -12,73 +12,56 @@
     "dark": "/logo/logo-dark.png"
   },
   "favicon": "/favicon.png",
+  "topbarLinks": [
+    {
+      "name": "Case",
+      "url": "/showcase/index.html"
+    }
+  ],
   "navigation": {
     "groups": [
       {
-        "group": "PilotDeck",
-        "pages": [
-          "pages/showcase/overview"
-        ]
-      },
-      {
-        "group": "案例",
-        "pages": [
-          "pages/showcase/zelda-glider",
-          "pages/showcase/podcast-multilingual",
-          "pages/showcase/qq-farm",
-          "pages/showcase/flight-shooter",
-          "pages/showcase/vr-ball-hunt",
-          "pages/showcase/latex-resume"
-        ]
-      },
-      {
-        "group": "Tutorial",
+        "group": "开始使用",
         "pages": [
           "pages/introduction",
           "pages/quickstart-web",
-          "pages/quickstart-desktop",
-          {
-            "group": "核心功能",
-            "pages": [
-              "pages/features/projects",
-              "pages/features/gateway",
-              "pages/features/router",
-              "pages/features/memory",
-              "pages/features/always-on"
-            ]
-          },
-          {
-            "group": "架构说明",
-            "pages": [
-              "pages/architecture/overview",
-              "pages/architecture/configuration"
-            ]
-          },
-          {
-            "group": "参考",
-            "pages": [
-              "pages/reference/cli",
-              "pages/reference/config-yaml",
-              "pages/reference/troubleshooting"
-            ]
-          },
-          {
-            "group": "开发指南",
-            "pages": [
-              "pages/development/contributing",
-              "pages/development/module-guide"
-            ]
-          }
+          "pages/quickstart-desktop"
+        ]
+      },
+      {
+        "group": "核心功能",
+        "pages": [
+          "pages/features/projects",
+          "pages/features/gateway",
+          "pages/features/router",
+          "pages/features/memory",
+          "pages/features/always-on"
+        ]
+      },
+      {
+        "group": "架构说明",
+        "pages": [
+          "pages/architecture/overview",
+          "pages/architecture/configuration"
+        ]
+      },
+      {
+        "group": "参考",
+        "pages": [
+          "pages/reference/cli",
+          "pages/reference/config-yaml",
+          "pages/reference/troubleshooting"
+        ]
+      },
+      {
+        "group": "开发指南",
+        "pages": [
+          "pages/development/contributing",
+          "pages/development/module-guide"
         ]
       }
     ]
   },
-  "redirects": [
-    {
-      "source": "/pages/showcase/overview",
-      "destination": "/showcase/index.html"
-    }
-  ],
   "footerSocials": {
     "github": "https://github.com/Gucc111/PilotDeck"
   }
