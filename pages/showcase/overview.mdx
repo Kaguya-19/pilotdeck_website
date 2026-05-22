@@ -12,39 +12,53 @@ PilotDeck 是一个以 WorkSpace 为核心的面向生产力的智能体开源�
 
 ---
 
+## 核心能力
+
+<Tabs>
+  <Tab title="WorkSpace 隔离">
+    每个项目拥有独立的文件系统、记忆存储和技能集，并行工作互不干扰。
+    <Frame>
+      <img src="/showcase/assets/workspace_en.gif" alt="WorkSpace 隔离演示" />
+    </Frame>
+  </Tab>
+  <Tab title="白盒记忆">
+    记忆的生成、提取、存储和检索全程可见。当 AI 记错时，可以精准定位并修复问题条目。
+    <Frame>
+      <img src="/showcase/assets/memory_en.gif" alt="白盒记忆演示" />
+    </Frame>
+  </Tab>
+  <Tab title="智能路由">
+    自动检测任务难度，复杂调用走旗舰模型，简单调用走轻量模型，大幅降低 token 开销。
+    <Frame>
+      <img src="/showcase/assets/router.gif" alt="智能路由演示" />
+    </Frame>
+  </Tab>
+  <Tab title="持续运行">
+    离开键盘后 Agent 持续发现待办任务、运行长期监控，最终将交付物落地为本地文件。
+    <Frame>
+      <img src="/showcase/assets/awo_en.gif" alt="持续运行演示" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+---
+
 ## 案例总览
 
 <CardGroup cols={2}>
-  <Card title="塞尔达滑翔" icon="gamepad" href="/pages/showcase/zelda-glider">
-    类似塞尔达的 WebGL 3D 滑翔游戏，用 Three.js 打造，支持自由操控和动态地形
+  <Card title="工作文档生成" icon="file-lines" href="/pages/showcase/ppt-whitepaper">
+    调研中国大模型应用市场，自动生成一份正式的 HTML 白皮书报告
+  </Card>
+  <Card title="小游戏开发" icon="gamepad" href="/pages/showcase/mini-game">
+    用 Vibe Coding 模式开发可在线游玩的浏览器小游戏
+  </Card>
+  <Card title="AI 工程平台开发" icon="microchip" href="/pages/showcase/model-training">
+    从零构建一个 Embedding 低代码调优平台
   </Card>
   <Card title="播客多语言推送" icon="language" href="/pages/showcase/podcast-multilingual">
-    一句话生成 6 种语言版本的图文推送页面，含文化适配封面图和 RTL 排版
-  </Card>
-  <Card title="QQ 农场" icon="seedling" href="/pages/showcase/qq-farm">
-    网页版简易 QQ 农场游戏，FastAPI + SQLite 架构，支持社交偷菜
-  </Card>
-  <Card title="飞机大战" icon="jet-fighter" href="/pages/showcase/flight-shooter">
-    经典飞机大战小游戏，包含多类型敌机、道具系统和波次递进难度
-  </Card>
-  <Card title="VR 毛球寻找" icon="vr-cardboard" href="/pages/showcase/vr-ball-hunt">
-    VR 眼镜形状的 3D 房间抓小球游戏，支持手机陀螺仪旋转视角
-  </Card>
-  <Card title="简历生成" icon="file-pdf" href="/pages/showcase/latex-resume">
-    基于 LaTeX 的专业个人简历模板，以雷军经历为范例，支持中英文排版
+    一句话生成 6 种语言版本的图文推送页面，含文化适配封面图
   </Card>
 </CardGroup>
-
-## 数据一览
-
-| 案例 | 用户输入 | AI 回复 | 工具调用 | 分类 |
-|------|---------|---------|---------|------|
-| 塞尔达滑翔 | 23 轮 | 1,412 轮 | 1,388 次 | 网页游戏 |
-| 播客多语言推送 | 1 轮 | 18 轮 | 17 次 | 多媒体 |
-| QQ 农场 | 10 轮 | 159 轮 | 149 次 | 网页游戏 |
-| 飞机大战 | 3 轮 | 10 轮 | 879 次 | 网页游戏 |
-| VR 毛球寻找 | 2 轮 | 1 轮 | 2 次 | 互动体验 |
-| 简历生成 | 5 轮 | 35 轮 | 114 次 | 工具 |
 
 ## 了解 PilotDeck
 
