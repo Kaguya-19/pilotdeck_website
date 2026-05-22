@@ -385,6 +385,13 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--glass-border);c
 .detail-right .btn-toggle{color:#2563eb !important;}
 .detail-right .btn-toggle.active{color:#1d4ed8 !important;background:rgba(37,99,235,0.1) !important;}
 .detail-right .msg-toggle-icon{color:#8888a0 !important;}
+.docs-btn{
+  display:inline-flex;align-items:center;gap:.35rem;
+  padding:.4rem 1rem;font-size:.82rem;font-weight:600;
+  color:#2563eb;background:transparent;border:1px solid #2563eb;
+  border-radius:8px;text-decoration:none;transition:all .2s;margin-right:.5rem;
+}
+.docs-btn:hover{background:#2563eb;color:#fff;}
 .lang-switch{display:flex;align-items:center;gap:.25rem;background:transparent;border:1px solid #d1d5db;border-radius:8px;overflow:hidden;cursor:pointer;}
 .lang-switch button{padding:.3rem .65rem;font-size:.78rem;font-weight:600;border:none;background:transparent;color:#374151;cursor:pointer;transition:all .15s;}
 .lang-switch button.active{background:#2563eb;color:#fff;}
@@ -411,9 +418,12 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--glass-border);c
 <nav>
   <div class="logo" onclick="goHome()"><img src="logo.png" alt="PilotDeck" style="height:32px;"></div>
   <button class="back-btn" id="backBtn" onclick="goHome()">&#8592; <span data-i18n="back">返回</span></button>
-  <div class="lang-switch" id="langSwitch">
+  <div style="display:flex;align-items:center;gap:.5rem;">
+    <a href="/pages/introduction" class="docs-btn">📖 Tutorial</a>
+    <div class="lang-switch" id="langSwitch">
     <button class="active" data-lang="zh" onclick="switchLang('zh')">中文</button>
     <button data-lang="en" onclick="switchLang('en')">EN</button>
+  </div>
   </div>
 </nav>
 

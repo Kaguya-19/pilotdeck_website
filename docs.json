@@ -73,6 +73,12 @@
       }
     ]
   },
+  "redirects": [
+    {
+      "source": "/pages/showcase/overview",
+      "destination": "/showcase/index.html"
+    }
+  ],
   "footerSocials": {
     "github": "https://github.com/Gucc111/PilotDeck"
   }
