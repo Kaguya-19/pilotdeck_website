@@ -12,53 +12,56 @@
     "dark": "/logo/logo-dark.png"
   },
   "favicon": "/favicon.png",
-  "topbarLinks": [
-    {
-      "name": "Case",
-      "url": "/showcase/index.html"
-    }
-  ],
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "开始使用",
-        "pages": [
-          "pages/introduction",
-          "pages/quickstart-web",
-          "pages/quickstart-desktop"
+        "tab": "Docs",
+        "groups": [
+          {
+            "group": "开始使用",
+            "pages": [
+              "pages/introduction",
+              "pages/quickstart-web",
+              "pages/quickstart-desktop"
+            ]
+          },
+          {
+            "group": "核心功能",
+            "pages": [
+              "pages/features/projects",
+              "pages/features/gateway",
+              "pages/features/router",
+              "pages/features/memory",
+              "pages/features/always-on"
+            ]
+          },
+          {
+            "group": "架构说明",
+            "pages": [
+              "pages/architecture/overview",
+              "pages/architecture/configuration"
+            ]
+          },
+          {
+            "group": "参考",
+            "pages": [
+              "pages/reference/cli",
+              "pages/reference/config-yaml",
+              "pages/reference/troubleshooting"
+            ]
+          },
+          {
+            "group": "开发指南",
+            "pages": [
+              "pages/development/contributing",
+              "pages/development/module-guide"
+            ]
+          }
         ]
       },
       {
-        "group": "核心功能",
-        "pages": [
-          "pages/features/projects",
-          "pages/features/gateway",
-          "pages/features/router",
-          "pages/features/memory",
-          "pages/features/always-on"
-        ]
-      },
-      {
-        "group": "架构说明",
-        "pages": [
-          "pages/architecture/overview",
-          "pages/architecture/configuration"
-        ]
-      },
-      {
-        "group": "参考",
-        "pages": [
-          "pages/reference/cli",
-          "pages/reference/config-yaml",
-          "pages/reference/troubleshooting"
-        ]
-      },
-      {
-        "group": "开发指南",
-        "pages": [
-          "pages/development/contributing",
-          "pages/development/module-guide"
-        ]
+        "tab": "Case",
+        "href": "/showcase/index.html"
       }
     ]
   },
